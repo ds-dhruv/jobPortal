@@ -12,6 +12,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'crispy_forms',  # <-- ADD THIS LINE
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
@@ -68,3 +69,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'dashboard:employer_dashboard'
 LOGOUT_REDIRECT_URL = 'home'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"  # <-- ADD THESE LINES
